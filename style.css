@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+}
+
+#calculator {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(17, 16, 16, 0.945);
+  max-width: 400px;
+  overflow-x: hidden;
+  border-radius: 15px;
+  border: none;
+  margin-left: 4rem;
+}
+
+#display {
+  width: 100%;
+  padding: 20px;
+  padding-left: 40px;
+  font-size: 3rem;
+  text-align: left;
+  background-color: rgba(49, 48, 48, 0.9);
+  border: none;
+  color: white;
+  outline: none;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  font-size: 1em;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(81, 79, 79, 0.868);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgba(81, 79, 79, 0.554);
+}
+
+button:active {
+  background-color: rgba(81, 79, 79, 0.868);
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.op {
+  background-color: rgba(255, 178, 34, 0.929);
+}
+
+.op:hover {
+  background-color: rgba(255, 178, 34, 0.979);
+}
+
+/* navbar */
+
+.navbar {
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+
+.navbar-brand {
+  margin: 0 4rem;
+  font-size: 1.5rem;
+}
+
+.hero {
+  margin: 4rem;
+  text-align: center;
+  margin-top: 11rem;
+  margin-bottom: 15rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.cta {
+  background-color: #ffb222ed;
+  color: white;
+  width: 220px;
+  height: 50px;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.cta:hover {
+  background-color: rgba(255, 178, 34, 0.767);
+}
+
+.container {
+  margin: 4rem;
+  display: flex;
+}
+
+.image {
+  margin-left: 4rem;
+}
+
+/* preventing dragging of image */
+
+img {
+  /* user-drag: none; */
+
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* footer */
+
+footer {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  margin-bottom: 0;
+  height: 3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}

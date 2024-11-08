@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Calculator</span>
+        </div>
+    </nav>
+    <!-- hero -->
+    <div class="hero">
+        <!-- text -->
+        <h1>“The Simple Calculator You Need”</h1>
+        <p>Simple, reliable, and fast—perfect for all your everyday math needs.</p>
+        <a href="#calculator"><button class="cta">Calculate Now</button></a>
+    </div>
+    <!-- section 1 -->
+    <div class="container">
+        <!-- calculator -->
+        <div id="calculator">
+            <input title="input" id="display" readonly>
+            <div id="keys">
+                <button onclick="showtodisp('+')" class="op">+</button>
+                <button onclick="showtodisp('7')">7</button>
+                <button onclick="showtodisp('8')">8</button>
+                <button onclick="showtodisp('9')">9</button>
+                <button onclick="showtodisp('-')" class="op">-</button>
+                <button onclick="showtodisp('4')">4</button>
+                <button onclick="showtodisp('5')">5</button>
+                <button onclick="showtodisp('6')">6</button>
+                <button onclick="showtodisp('*')" class="op">*</button>
+                <button onclick="showtodisp('1')">1</button>
+                <button onclick="showtodisp('2')">2</button>
+                <button onclick="showtodisp('3')">3</button>
+                <button onclick="showtodisp('/')" class="op">/</button>
+                <button onclick="showtodisp('0')">0</button>
+                <button onclick="showtodisp('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="cleardisp()" class="op">C</button>
+            </div>
+        </div>
+        <!-- image -->
+        <div class="image">
+            <img src="hero-img.png" alt="Illustration" width="600px">
+        </div>
+    </div>
+    <footer>
+        <p>Keerthana Ravi © 2024</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
